@@ -1,0 +1,34 @@
+.question{
+    &__inner {
+        padding: 30px;
+        max-width: 600px;
+        overflow: hidden;
+        & .item {
+            margin: 20px 0;
+            &__column {
+                @include flex(space-around, center);
+            }
+            &__false {
+                cursor: pointer;
+            }
+            &__true {
+                cursor: pointer;
+            }
+            &__ask {
+                font-size: 30px;
+                margin-bottom: 10px;
+
+            }
+            &__answer {
+                background: #ff0;
+                overflow: hidden;
+                padding: 0 15px;
+                display: none;
+                &.open {
+                    display: block;
+                    animation: fadeIn 0.8s;
+                }
+            }
+        }
+    }
+}

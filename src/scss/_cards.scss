@@ -1,0 +1,145 @@
+.cards {
+    padding-top: 150px;
+    padding-bottom: 200px;
+    &__grid {
+        @include flex(space-between, center);
+        margin-top: 40px;
+    }
+
+    &__card {
+        margin-top: 60px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+.card {
+    text-align: center;
+    width: 320px;
+    height: 500px;
+    position: relative;
+    transition: 0.24s;
+    &:hover {
+        transform: scale(1.04);
+    }
+    &_sibling {
+        transform: scale(0.96);
+        opacity: 0.8;
+        -webkit-filter: grayscale(64%);
+        filter: grayscale(64%);
+    }
+    &._white {
+        background-color: rgb(196, 192, 192);
+        border-radius: 10px;
+        a {
+            color:$dark;
+        }
+        & .card__category {
+            color: rgb(3, 108, 245);
+        }
+        & a {
+            transition: .24s linear;
+            &:hover {
+                color: rgb(3, 108, 245);
+            }
+        }
+        & img {
+            height: 215px;
+        }
+    }
+    &._blue {
+        background-color: rgb(3, 108, 245);
+        color: white;
+        border-radius: 10px;
+        a {
+            color: white;
+        }
+        & img {
+            height: 215px;
+            width: 320px;
+        }
+    }
+    &__image {
+        position: absolute;
+        top: -25px;
+        background-color: transparent;
+        img {
+            max-width: 90%;
+            border-radius: 10px;
+            box-shadow: 2px 8px 16px rgba(0,0,0,0.5);
+        }
+    }
+
+    &__body {
+        position: absolute;
+        bottom: 90px;
+        text-align: start;
+        padding-right: 10px;
+        height: 172px;
+    }
+
+    &__category {
+        text-align: start;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__grow {
+        padding-left: 20px;
+    }
+
+    &__title {
+        padding-bottom: 20px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.428571428571429;
+        font-weight: 300;
+    }
+    &__modal {
+        position: absolute;
+        right: 0;
+        bottom: -75px;
+        left: 0;
+        text-align: center;
+
+        & .modal-btn {
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) { 
+
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px) { 
+    .cards{
+        padding-top: 60px;
+        padding-bottom: 100px;
+        &__grid {
+            justify-content: center;
+        }
+    }
+    .card + .card {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 320px) {
+}

@@ -1,0 +1,135 @@
+.slider {
+    padding-top: 150px;
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 700;
+        .text {
+            font-size: 36px;
+        }
+    }
+    &__inner {
+    }
+}
+.container {
+}
+.swiper {
+    max-width: 870px;
+    max-height: 500px;
+    &-wrapper {
+        position: relative;
+    }
+
+    &-slide {
+        img {
+            width: 870px;
+            max-height: 800px;
+        }
+    }
+
+    &-pagination {
+        padding-bottom: 20px;
+        &-bullet {
+            border-radius: 0%;
+            border: 0.5px solid $white;
+            opacity: 100%;
+            background: transparent;
+            width: 20px;
+            height: 4px;
+        }    
+        &-bullet-active {
+            border: 0.5px solid $white;
+            background: $white;
+        }
+    }
+    &-button {
+        &-prev {
+            color: $white;
+        }
+        &-next {
+            color: $white;
+        }
+    }
+}
+
+.swiper-slide {
+
+    &__grow {
+    }
+}
+.grow {
+    position: absolute;
+    top: 77%;
+    text-align: center;
+    right: 0;
+    left: 0;
+    &__title {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: $white;
+        font-weight: 600;
+    }
+
+    &__more {
+
+    }
+    &__btn {
+        background-color: rgb(3, 108, 245);
+        border-radius: 5px;
+        color: $white;
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width: 1199.98px) { 
+
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px) { 
+    
+    .swiper {
+        width: 340px;
+        height: 350px;
+        &-slide {
+            img {
+                width: 440px;
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+    }
+    .grow {
+        position: absolute;
+        top: 66%;
+        text-align: center;
+        right: 0;
+        left: 0;
+        &__title {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: $white;
+            font-weight: 600;
+        }
+    
+        &__more {
+    
+        }
+        &__btn {
+            background-color: rgb(3, 108, 245);
+            border-radius: 5px;
+            color: $white;
+            padding: 10px 8px;
+        }
+    }
+}
+@media (max-width: 320px) {
+}
+

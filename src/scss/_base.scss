@@ -1,0 +1,22 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+$sf: 'SF Pro Display', sans-serif;
+///цвета
+$dark: #020202;
+$white: #f5f3f0;
+$blue: rgb(3, 108, 245);
+///
+$container: 1200px;
+$mc: 0 auto;
+$pd: 0 15px;
+
+body {
+    font-family: $sf;
+    background-color: $white;
+    font-size: 16px;
+}
+.container {
+    max-width: $container;
+    margin: $mc;
+    padding: $pd;
+}
+
